@@ -1,11 +1,11 @@
 <?php
 /**
- * DokuWiki Plugin tododone (Menu Item)
+ * DokuWiki Plugin todomover (Menu Item)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-namespace dokuwiki\plugin\tododone;
+namespace dokuwiki\plugin\todomover;
 
 use dokuwiki\Menu\Item\AbstractItem;
 

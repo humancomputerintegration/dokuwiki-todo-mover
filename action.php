@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuWiki Plugin tododone (Action Component)
+ * DokuWiki Plugin todomover (Action Component)
  *
  * Adds a page action that moves todo items with a hashtag in the opening
  * <todo ...> tag to a final "## done" section.
@@ -14,7 +14,7 @@ use dokuwiki\Extension\EventHandler;
 
 if (!defined('DOKU_INC')) die();
 
-class action_plugin_tododone extends ActionPlugin
+class action_plugin_todomover extends ActionPlugin
 {
     const ACTION = 'movetaggedtodos';
     const DONE_HEADING = '## done';
@@ -48,7 +48,7 @@ class action_plugin_tododone extends ActionPlugin
         if (auth_quickaclcheck($ID) < AUTH_EDIT) return;
 
         try {
-            array_splice($event->data['items'], 1, 0, [new \dokuwiki\plugin\tododone\MenuItem()]);
+            array_splice($event->data['items'], 1, 0, [new \dokuwiki\plugin\todomover\MenuItem()]);
         } catch (\Exception $ignored) {
             // Some templates/menu configurations may reject custom items. The legacy
             // pagetools hook below is kept as a fallback.

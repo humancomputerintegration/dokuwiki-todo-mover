@@ -27,7 +27,7 @@ After clicking **Move tagged todos**:
 Copy this folder to:
 
 ```text
-lib/plugins/tododone/
+lib/plugins/todomover/
 ```
 
 Then visit a DokuWiki page where you have edit permission and click **Move tagged todos** in the page tools/menu.
