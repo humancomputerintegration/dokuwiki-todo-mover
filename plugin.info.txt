@@ -1,0 +1,7 @@
+base   tododone
+author PedroLopes
+email  hci@uchicago.edu
+date   2026-07-03
+name   Todo Done Mover
+desc   Adds a page action that moves <todo #tag> items to a bottom "## done" section
+url    https://github.com/humancomputerintegration/dokuwiki-todo-mover
